@@ -4,17 +4,10 @@ class Scooter {
   }
 }
 
-class ElectricScooter {
+class ElectricScooter extends Scooter {
   constructor(model) {
-    this.model = model;
+    super(model);
     this.charged = false;
   }
 }
-//test does not pass if extending - overides electric scooter.
-// class ElectricScooter extends Scooter {
-//   constructor(model) {
-//     super(model);
-//     this.charged = false;
-//   }
-// }
 module.exports = { Scooter, ElectricScooter };
