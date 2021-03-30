@@ -7,10 +7,10 @@ class HiringStn {
     this.manualScooters = [];
   }
   addScooter(scooter) {
-    if (scooter instanceof Scooter) {
-      this.manualScooters.push(scooter);
-    } else if (scooter instanceof ElectricScooter) {
+    if (scooter instanceof ElectricScooter) {
       this.electricScooters.push(scooter);
+    } else if (scooter instanceof Scooter) {
+      this.manualScooters.push(scooter);
     }
   }
 

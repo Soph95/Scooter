@@ -1,5 +1,4 @@
 const { Scooter, ElectricScooter } = require("../src/scooter");
-const HiringStn = require("../src/stations");
 
 class User {
   constructor(name) {

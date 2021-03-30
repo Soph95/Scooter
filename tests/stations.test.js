@@ -20,7 +20,6 @@ describe("Scooter adding tests", () => {
     const station1 = new HiringStn("ldn");
     const elScooter1 = new ElectricScooter("model345");
     station1.addScooter(elScooter1);
-    //console.log(station1); - failing
     expect(station1.electricScooters).toEqual([elScooter1]);
   });
 });
